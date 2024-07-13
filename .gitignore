@@ -78,5 +78,5 @@ gdb-*
 modules.order
 Module.symvers
 Mkfile.old
-.readme_sync
+.doc_sync
 
