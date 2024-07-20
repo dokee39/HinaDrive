@@ -21,9 +21,9 @@
 </div>
 
 回顾一下高中物理知识, 如图所示, 考虑一个均匀磁场中的载流线圈的受力情况, 该线圈中各边的受到的作用力为: 
-$$
-\displaystyle{ \boldsymbol{ F } = i \left( \boldsymbol{ l } \times \boldsymbol{ B } \right) }
-$$
+
+$$\displaystyle{ \boldsymbol{ F } = i \left( \boldsymbol{ l } \times \boldsymbol{ B } \right) }$$
+
 其中 $\displaystyle{ \boldsymbol{ l } }$ 的方向定义为该段导体上电流的方向. 
 
 容易推断得到, ab 段受垂直向下的作用力, cd 段受垂直向上的作用力, 而 bc 与 da 段受力对线圈的旋转不起作用. 可以预想线圈会向与磁场垂直的平面旋转. 
@@ -33,29 +33,27 @@ $$
 </div>
 
 线圈中通过的电流也会产生磁场. 定义线圈产生的磁场的磁通密度矢量为 $\displaystyle{ \boldsymbol{ B } _{ \text{loop} } }$, 空间中的均匀磁场的磁通密度矢量为 $\displaystyle{ \boldsymbol{ B } _{ \text{S} } }$, 它们之间的夹角为 $\displaystyle{ \theta }$, 带入上面的安培力定律公式, 不难得出线圈受到的力矩为: 
-$$
-\displaystyle{ \tau = 2 ri l B _{ \text{S} } \sin \theta }
-$$
+
+$$\displaystyle{ \tau = 2 ri l B _{ \text{S} } \sin \theta }$$
 
 可以看出当两磁场间夹角为 90 度时受到的力矩最大, 而当两磁场平行时力矩为 0. 为了更清晰地表示出两磁场间的作用, 我们将上式中和线圈本身有关的参数替换掉. 已知 $\displaystyle{ B _{ \text{loop} } \propto i }$, 则有 $\displaystyle{ \tau = k B _{ \text{loop} } B _{ \text{S} } \sin \theta }$, 其中 $k$ 为一常系数. 上式写成叉积形式为: 
-$$
-\displaystyle{ \boldsymbol{ \tau } = k \boldsymbol{ B } _{ \text{loop} } \times \boldsymbol{ B } _{ \text{S} } }
-$$
+
+$$\displaystyle{ \boldsymbol{ \tau } = k \boldsymbol{ B } _{ \text{loop} } \times \boldsymbol{ B } _{ \text{S} } }$$
 
 分析上式可以得出, 和两块永磁体靠近时类似, **两个磁场将会产生一个趋向于将两磁场对齐的转矩**. 对于无刷电机来说, **一个磁场由定子线圈产生, 另一个磁场由电机的转子永磁体产生, 那么转子上就会产生一个电磁转矩, 该转矩推动转子旋转, 趋向于使转子磁场与定子磁场对齐**. 
 
 ### 电磁转矩与线圈中电流的关系
 
 如果保持转子磁场 $\displaystyle{ \boldsymbol{ B } _{ \text{R} } }$ 与定子磁场 $\displaystyle{ \boldsymbol{ B } _{ \text{S} } }$ 之间的夹角始终为 **90 度**, 那么此时**转子受到的电磁转矩最大**, 又由于永磁体电机中 $\displaystyle{ \boldsymbol{ B } _{ \text{R} } }$ 的大小恒定, 因此可以得到**转子受到的电磁转矩大小 $\displaystyle{ \tau }$ 与线圈中通过的电流大小 $\displaystyle{ i }$ 成正比**, 即: 
-$$
-\displaystyle{ \tau = K _{ \tau } \cdot i }
-$$
+
+$$\displaystyle{ \tau = K _{ \tau } \cdot i }$$
+
 其中 $\displaystyle{ K _{ \tau } }$ 为转矩常数, 这与直流有刷电动机是一致的. 
 
 类似上面的推导过程还可以得出无刷电机的感应电动势为: 
-$$
-\displaystyle{ E = K _{ E } \cdot \omega }
-$$
+
+$$\displaystyle{ E = K _{ E } \cdot \omega }$$
+
 其中 $K_E$ 为反电动势常数, $\displaystyle{ \omega }$ 为电机的转速, 上式表明**定子线圈中的反电动势大小 $\displaystyle{ E }$ 与电机的转速成正比**. 这两个式子是电机学中的重要公式. 
 
 PS: 无刷直流电动机称为 "直流电动机", 是由于其许多特性和有刷直流电动机相似, 但是实际上无刷直流电动机是一种交流电动机. 
@@ -79,9 +77,8 @@ PS: 无刷直流电动机称为 "直流电动机", 是由于其许多特性和�
 ### 多磁极对电机电频率与旋转磁场转速之间的关系
 
 实际使用的无刷电机的转子一般都不止有一个磁极对, 而是多磁极对的. 对于磁极对数为 $\displaystyle{ \frac{ P }{ 2 } }$ 的电机, 转子旋转一圈, 定子线圈上产生 $\displaystyle{ \frac{ P }{ 2 } }$ 个周期的正弦波反电动势. 反过来也就是说, 定子线圈上通过时间为一个周期的正弦波, 旋转磁场转过的角度为 $\displaystyle{ \frac{ 2 }{ P } }$ 周. 可见无刷电机通过三相电的**电频率与旋转磁场转速是成倍数关系的**. 电频率 $\displaystyle{ f _{ \text{se} } }$ 与 旋转磁场旋转频率 $\displaystyle{ f _{ \text{sm} } }$ 的关系为: 
-$$
-\displaystyle{ \begin{aligned}f _{ \text{se} } & = \frac{ P }{ 2 } f _{ \text{sm} }\end{aligned} }
-$$
+
+$$\displaystyle{ \begin{aligned}f _{ \text{se} } & = \frac{ P }{ 2 } f _{ \text{sm} }\end{aligned} }$$
 
 ## 磁场定向控制 (FOC)
 
