@@ -74,7 +74,7 @@
         <a href="#acknowledgments">Acknowledgments</a>
         <ul>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#reference">Reference</a></li>
+            <li><a href="#references">References</a></li>
         </ul>
     </li>
   </ol>
@@ -134,13 +134,20 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] `0.Docs` 文档教程
-    - [x] Section 1 无刷电机的工作原理
+- [ ] `0.Docs/tutor` 文档教程
+    - [x] Section 1 无刷电机控制概述
+    - [x] Section 2 磁场定向控制 (FOC) 引入
+    - [ ] SVPWM
+    - [ ] Clark & Park 变换
+    - [ ] 编码器电流采样
+    - [ ] 驱动版硬件解析
+    - [ ] 代码讲解
+    - [ ] 前置知识与深入了解推荐
+    - [ ] 符号约定
     - [ ] 电机选型/参数解释
-    - [ ] 驱动版硬件
-    - [ ] FOC 的原理, 代码
 - [ ] 用 ODrive 的板子实现第一个 FOC
     - [ ] 期间调电流环之类的时候可以尝试学习仿真
+- [ ] HinaDrive-lib 作为 subtree 和 components, 而 lib 结合 examples 中的 subtree 项目里的 portable 代码运行
 - [ ] 实现自己的板子
     - [ ] 将功率板和控制板分开? 
     - [ ] 先用 STM32G4
@@ -206,11 +213,20 @@ Project Link: [https://github.com/dokee39/HinaDrive](https://github.com/dokee39/
 - [SimpleFOC](https://github.com/simplefoc/Arduino-FOC)
 - [DengFOC](https://github.com/ToanTech/Deng-s-foc-controller)
 
-### Reference
-- [【自制 FOC 驱动器】深入浅出讲解 FOC 算法与 SVPWM 技术 - 知乎](https://zhuanlan.zhihu.com/p/147659820)
-- [无刷电机的工作原理, 动图演示, 一目了然 - 知乎](https://zhuanlan.zhihu.com/p/72091265)
-- [【MATLAB官方教程】FOC电机控制](https://www.bilibili.com/video/BV1W94y1f7QZ)
-- [无刷电机控制概述 - ESP-IoT-Solution](https://docs.espressif.com/projects/esp-iot-solution/zh_CN/latest/motor/bldc/bldc_overview.html)
+### References
+
+- books
+    - 谭建成, *永磁无刷直流电机技术*
+    - Chapman, *电机学*
+- articles
+    - [【自制 FOC 驱动器】深入浅出讲解 FOC 算法与 SVPWM 技术 - 知乎](https://zhuanlan.zhihu.com/p/147659820)
+    - [无刷电机的工作原理, 动图演示, 一目了然 - 知乎](https://zhuanlan.zhihu.com/p/72091265)
+- videos
+    - [【MATLAB官方教程】FOC电机控制](https://www.bilibili.com/video/BV1W94y1f7QZ)
+- documents
+    - [无刷电机控制概述 - ESP-IoT-Solution](https://docs.espressif.com/projects/esp-iot-solution/zh_CN/latest/motor/bldc/bldc_overview.html)
+- blogs
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
