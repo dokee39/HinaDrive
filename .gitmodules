@@ -1,0 +1,6 @@
+[submodule "3.Firmware/lib"]
+	path = 3.Firmware/lib
+	url = git@github.com:dokee39/HinaDrive-Lib.git
+[submodule "3.Firmware/examples/BLDC_CH32"]
+	path = 3.Firmware/examples/BLDC_CH32
+	url = git@github.com:dokee39/HinaDrive-BLDC_CH32.git
